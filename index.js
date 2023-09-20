@@ -4,9 +4,9 @@ function receivesAFunction(callback) {
     callback();  
 }
 
-receivesAFunction(callbackSpy);
+receivesAFunction(callback);
 
-console.log(callbackSpy.called); 
+console.log(callback); 
 
 
 function returnsANamedFunction() {
@@ -18,7 +18,7 @@ function returnsANamedFunction() {
 
 function returnsAnAnonymousFunction() {
     return function () {
-        
+
     };  
     
 }
